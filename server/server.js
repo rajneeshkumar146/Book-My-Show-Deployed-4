@@ -21,7 +21,8 @@ connectDb(); // Stablish database connection.
 
 app.use(
     cors({
-        origin: ["http://localhost:3000", "https://book-my-show-deployed-4.onrender.com"], // Allow only your frontend origin
+        // origin: ["http://localhost:3000", "https://book-my-show-deployed-4.onrender.com"], // Allow only your frontend origin
+        origin: "*", // Allow only your frontend origin
         methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
         allowedHeaders: ["Content-Type", "Authorization"],
         credentials: true,
