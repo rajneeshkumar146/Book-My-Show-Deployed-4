@@ -51,7 +51,7 @@ h. git push -u origin main
 # Step 3: Set Up Render Account and New Web Service
 
 a. Sign Up or Log In to Render: Go to Render and sign up or log in to
-your account.
+your account(using github)
 
 b. Create a New Web Service: Click on the “New” button and select
 “Web Service.”
@@ -91,5 +91,10 @@ MONGODB_URI, JWT_SECRET, etc.
 
 
 ## Step 7: Correct your base URL in client -> src/api/index.js
+    - Change yout base URL in index of axios instance to https://book-my-show-deployed-4.onrender.com
+    - Remove '"proxy": "http://localhost:8082"' from package.json from client directory.
+    
 
-## Step 8: 
+## Step 8: Make changes to server.js to serve the build:
+     - setup cors.
+     - add static html of clinet build directory.
